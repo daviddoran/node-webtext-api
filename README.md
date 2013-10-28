@@ -29,7 +29,7 @@ Now you can call the various API methods.
 
 #### Send an SMS message
 
-See the [Sending Messages](#sending-sms) section below for details.
+See the [Sending Messages](#sending-messages) section below for details.
 
 ```javascript
 wt.send({
