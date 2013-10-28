@@ -158,7 +158,7 @@ Here is the full list of supported properties with examples:
 {delivery_delta: 10}
 ```
 
-`validity` is the number of minutes the SMS is valid for (after which delivery will not be attempted.
+`validity` is the number of minutes the SMS is valid for (after which delivery will not be attempted).
 ```javascript
 //Message is valid for 5 hours
 {validity: 300}
