@@ -1,4 +1,4 @@
-# Node.js WebText.com API Client
+# Node.js WebText.com API Client [![Build Status](https://api.travis-ci.org/daviddoran/node-webtext-api.png)](https://travis-ci.org/daviddoran/node-webtext-api)
 
 Send messages, check account balance, and manage contacts on WebText.com.
 
