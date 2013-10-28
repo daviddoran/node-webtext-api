@@ -1,6 +1,6 @@
 {
     "name": "webtext-api",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Send messages, check account balance, and manage contacts on WebText.com.",
     "main": "lib/main.js",
     "scripts": {

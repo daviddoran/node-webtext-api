@@ -244,10 +244,11 @@ Remove a contact group. `callback` is `function(err /*WebTextError*/)`.
 
 ## Learnings
 
-- Publishing packages to [npm](https://npmjs.org/)
-- Writing Mocha tests for Node.js
 - Using the npm [request](https://npmjs.org/package/request) package for making HTTP requests
+- Publishing packages to [npm](https://npmjs.org/)
 - Implementing 'optional dependencies' with `try/catch` around `require(...)`
+- Writing Mocha tests for Node.js
+- Setting up [Travis CI](https://travis-ci.org/) testing for Node.js projects
 
 ## License
 
