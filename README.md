@@ -190,6 +190,58 @@ wt.balance(function (err, balance) {
 });
 ```
 
+## API Reference
+
+```javascript
+wt.https(boolean) # => boolean
+```
+Enable or disable HTTPS. Returns whether HTTPS is currently enabled.
+
+```javascript
+wt.credentials(username /*string*/, password /*string*/) # => {username: ..., password: ...}
+```
+
+Set the API credentials to use. Returns the current credentials.
+
+```javascript
+wt.balance(callback /*optional*/)
+```
+
+Get account balance. `callback` is of the form `function(err /*WebTextError*/, balance /*number*/)`.
+
+```javascript
+wt.contacts.save(number /*string*/, params /*optional object*/, callback /*optional*/)
+```
+
+Add or update a contact. `callback` is `function(err /*WebTextError*/)`.
+
+`params` may contain the following optional properties:
+
+- `name`, the name of the contact
+- `group`, the alias id of a group to add the contact to
+
+```javascript
+wt.contacts.remove(number /*string*/, params /*optional object*/, callback /*optional*/)
+```
+
+Remove a contact. `callback` is `function(err /*WebTextError*/)`.
+
+`params` may contain the following optional properties:
+
+- `group`, the alias id of a group to remove the contact from
+
+```javascript
+wt.groups.save(name /*string*/, callback /*optional*/)
+```
+
+Add a contact group. `callback` is `function(err /*WebTextError*/, alias /*number*/)`.
+
+```javascript
+wt.groups.remove(group /*number*/, callback /*optional*/)
+```
+
+Remove a contact group. `callback` is `function(err /*WebTextError*/)`.
+
 ## Learnings
 
 - Publishing packages to [npm](https://npmjs.org/)
