@@ -187,6 +187,13 @@ wt.balance(function (err, balance) {
     }
 });
 ```
+
+## Learnings
+
+- Publishing packages to [npm](https://npmjs.org/)
+- Writing Mocha tests for Node.js
+- Using the npm [request](https://npmjs.org/package/request) package for making HTTP requests
+
 ## License
 
 This project is released under the MIT License.
