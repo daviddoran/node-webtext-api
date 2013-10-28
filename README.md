@@ -164,6 +164,29 @@ Here is the full list of supported properties with examples:
 {validity: 300}
 ```
 
+## Error Handling
+
+There are only two types of errors you need to handle:
+
+The `WebText.Message` constructor may throw a validation error, which you can handle like this:
+
+```javascript
+try {
+    var m = new WebText.Message();
+} catch (e) {
+    console.log('Validation error: ' + e.message);
+}
+```
+
+The various API methods take a `callback` parameter, which will be called with a `WebTextError` if something goes wrong:
+
+```javascript
+wt.balance(function (err, balance) {
+    if (err) {
+        console.log('Error getting balance: ' + err.message);
+    }
+});
+```
 ## License
 
 This project is released under the MIT License.
