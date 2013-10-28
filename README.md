@@ -16,7 +16,7 @@ Require this package after installing with npm:
 var WebText = require('webtext-api');
 ```
 
-Create a WebText object with your API User and Password:
+Create a `WebText` object with your API User and Password:
 
 ```javascript
 var user = 'bw13cexH',
@@ -178,6 +178,8 @@ try {
 }
 ```
 
+If you use the `WebText#send` method directly without a message object then the error above is handled for you.
+
 The various API methods take a `callback` parameter, which will be called with a `WebTextError` if something goes wrong:
 
 ```javascript
@@ -193,6 +195,7 @@ wt.balance(function (err, balance) {
 - Publishing packages to [npm](https://npmjs.org/)
 - Writing Mocha tests for Node.js
 - Using the npm [request](https://npmjs.org/package/request) package for making HTTP requests
+- Implementing 'optional dependencies' with `try/catch` around `require(...)`
 
 ## License
 
