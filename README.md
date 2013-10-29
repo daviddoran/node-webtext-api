@@ -210,6 +210,15 @@ wt.balance(callback /*optional*/)
 Get account balance. `callback` is of the form `function(err /*WebTextError*/, balance /*number*/)`.
 
 ```javascript
+wt.send(message /*object*/, callback /*optional*/)
+```
+```javascript
+wt.send(message /*WebText.Message*/, callback /*optional*/)
+```
+
+Send a message. If `message` is an object then it will be passed to `new WebText.Message`. `callback` is `function(err /*WebTextError*/)`.
+
+```javascript
 wt.contacts.save(number /*string*/, params /*optional object*/, callback /*optional*/)
 ```
 
