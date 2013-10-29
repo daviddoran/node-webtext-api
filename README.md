@@ -193,12 +193,12 @@ wt.balance(function (err, balance) {
 ## API Reference
 
 ```javascript
-wt.https(boolean) # => boolean
+wt.https(enabled /*boolean*/) // => boolean
 ```
 Enable or disable HTTPS. Returns whether HTTPS is currently enabled.
 
 ```javascript
-wt.credentials(username /*string*/, password /*string*/) # => {username: ..., password: ...}
+wt.credentials(username /*string*/, password /*string*/) // => {username: ..., password: ...}
 ```
 
 Set the API credentials to use. Returns the current credentials.
