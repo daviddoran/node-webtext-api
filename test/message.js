@@ -82,7 +82,7 @@ describe('Message', function () {
         it('should accept a delivery time', function () {
             var date = new Date(Date.UTC(2016, 11, 14, 13, 5));
             var expected = expbase({delivery_time: '201612141305'});
-            var m = new Message(base({time: date}));
+            var m = new Message(base({delivery_time: date}));
             assert.deepEqual(m.serialize(), expected);
         });
 
